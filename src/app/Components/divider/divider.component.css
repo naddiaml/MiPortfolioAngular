@@ -1,0 +1,8 @@
+.divider {
+  width: 80%;
+  height: 0.5px;
+  background-color: rgb(219, 219, 219);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  position: initial;
+  margin: 30px auto;
+}

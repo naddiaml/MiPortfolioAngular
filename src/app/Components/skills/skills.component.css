@@ -1,0 +1,124 @@
+/* Sección 3 · Skills */
+
+.aclaracion {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+.section3-skills {
+  margin: 0 4vw;
+  height: max-content;
+}
+
+.skills__container {
+  margin-top: 25px;
+}
+
+.skill {
+  position: relative;
+  margin: 25px 0;
+}
+
+.skill-outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 10px -1px rgba(61, 61, 61, 0.15),
+    -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+}
+
+.skill-inner {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(152, 152, 152, 0.2),
+    inset -4px -4px 6px -1px rgba(225, 225, 225, 0.7),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill__icon i {
+  font-size: 30px;
+}
+
+.skill__icon img {
+  width: 35px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 19px;
+  stroke-dasharray: 435;
+  stroke-dashoffset: 435;
+  stroke-linecap: round;
+  animation: anim 1.5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 100.25;
+  }
+}
+
+/* 435 - 435 * 0.% */
+
+/*
+  
+  .first__skill circle {
+      animation: anim-first_skill 1.5s linear forwards;
+  }
+  
+  
+  @keyframes anim-first_skill {
+      100% {
+          stroke-dashoffset: 180.25;
+      }
+  }
+  
+  .second__skill circle {
+      animation: anim-second_skill 1.5s linear forwards;
+  }
+  
+  @keyframes anim-second_skill {
+      100% {
+          stroke-dashoffset: 100.25;
+      }
+  }
+  
+  .third__skill circle {
+      animation: anim-third_skill 1.5s linear forwards;
+  }
+  
+  @keyframes anim-third_skill {
+      100% {
+          stroke-dashoffset: 120;
+      }
+  }
+  
+  
+  */
+
+@media (max-width: 850px) {
+  .skills__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill {
+    margin: 20px 0;
+  }
+}

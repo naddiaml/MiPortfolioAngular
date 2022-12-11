@@ -1,0 +1,34 @@
+.about-section__pfp {
+  top: -5rem;
+  width: 20vh;
+  height: 20vh;
+  border: 0.5rem solid #fff;
+  background-image: url(/assets/Avatar.png);
+  background-position: 50%;
+  background-size: cover;
+}
+
+@media (max-width: 850px) {
+  .about-section__pfp-container {
+    z-index: -1;
+  }
+
+  .about-section__pfp-container {
+    z-index: 1;
+  }
+
+  .about-section__pfp {
+    margin: auto;
+    top: -1vh;
+    width: 15vh;
+    height: 15vh;
+    border: 6px solid #fff;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+  /* pfp */
+  .about-section__pfp {
+    z-index: 0;
+  }
+}
